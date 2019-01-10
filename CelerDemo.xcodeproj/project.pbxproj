@@ -1,0 +1,642 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CAD743B21E7DFAB0096A99D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAD743A21E7DFAB0096A99D /* AppDelegate.swift */; };
+		1CAD743D21E7DFAB0096A99D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAD743C21E7DFAB0096A99D /* ViewController.swift */; };
+		1CAD744021E7DFAB0096A99D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CAD743E21E7DFAB0096A99D /* Main.storyboard */; };
+		1CAD744321E7DFAB0096A99D /* CelerDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1CAD744121E7DFAB0096A99D /* CelerDemo.xcdatamodeld */; };
+		1CAD744521E7DFAF0096A99D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CAD744421E7DFAF0096A99D /* Assets.xcassets */; };
+		1CAD744821E7DFAF0096A99D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CAD744621E7DFAF0096A99D /* LaunchScreen.storyboard */; };
+		1CAD745321E7DFAF0096A99D /* CelerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAD745221E7DFAF0096A99D /* CelerDemoTests.swift */; };
+		1CAD745E21E7DFAF0096A99D /* CelerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAD745D21E7DFAF0096A99D /* CelerDemoUITests.swift */; };
+		1CAD748721E7EE1B0096A99D /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAD748521E7EE1B0096A99D /* Slide.swift */; };
+		1CAD748821E7EE1B0096A99D /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CAD748621E7EE1B0096A99D /* Slide.xib */; };
+		1CAD749021E7FB970096A99D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAD748F21E7FB970096A99D /* QuartzCore.framework */; };
+		1CAD749321E80B3F0096A99D /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CAD749221E80B3E0096A99D /* iCarousel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CAD744F21E7DFAF0096A99D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CAD742F21E7DFAB0096A99D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CAD743621E7DFAB0096A99D;
+			remoteInfo = CelerDemo;
+		};
+		1CAD745A21E7DFAF0096A99D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CAD742F21E7DFAB0096A99D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CAD743621E7DFAB0096A99D;
+			remoteInfo = CelerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1CAD743721E7DFAB0096A99D /* CelerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CelerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CAD743A21E7DFAB0096A99D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1CAD743C21E7DFAB0096A99D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1CAD743F21E7DFAB0096A99D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1CAD744221E7DFAB0096A99D /* CelerDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CelerDemo.xcdatamodel; sourceTree = "<group>"; };
+		1CAD744421E7DFAF0096A99D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1CAD744721E7DFAF0096A99D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1CAD744921E7DFAF0096A99D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CAD744E21E7DFAF0096A99D /* CelerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CelerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CAD745221E7DFAF0096A99D /* CelerDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelerDemoTests.swift; sourceTree = "<group>"; };
+		1CAD745421E7DFAF0096A99D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CAD745921E7DFAF0096A99D /* CelerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CelerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CAD745D21E7DFAF0096A99D /* CelerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelerDemoUITests.swift; sourceTree = "<group>"; };
+		1CAD745F21E7DFAF0096A99D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CAD748521E7EE1B0096A99D /* Slide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Slide.swift; path = "../../../Downloads/OnboardingSample-master 2/OnboardingExample/views/Slide.swift"; sourceTree = "<group>"; };
+		1CAD748621E7EE1B0096A99D /* Slide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		1CAD748A21E7FB750096A99D /* CelerDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CelerDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		1CAD748F21E7FB970096A99D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		1CAD749121E80B3E0096A99D /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
+		1CAD749221E80B3E0096A99D /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CAD743421E7DFAB0096A99D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CAD749021E7FB970096A99D /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CAD744B21E7DFAF0096A99D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CAD745621E7DFAF0096A99D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CAD742E21E7DFAB0096A99D = {
+			isa = PBXGroup;
+			children = (
+				1CAD743921E7DFAB0096A99D /* CelerDemo */,
+				1CAD745121E7DFAF0096A99D /* CelerDemoTests */,
+				1CAD745C21E7DFAF0096A99D /* CelerDemoUITests */,
+				1CAD743821E7DFAB0096A99D /* Products */,
+				1CAD748E21E7FB960096A99D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1CAD743821E7DFAB0096A99D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CAD743721E7DFAB0096A99D /* CelerDemo.app */,
+				1CAD744E21E7DFAF0096A99D /* CelerDemoTests.xctest */,
+				1CAD745921E7DFAF0096A99D /* CelerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CAD743921E7DFAB0096A99D /* CelerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1CAD749121E80B3E0096A99D /* iCarousel.h */,
+				1CAD749221E80B3E0096A99D /* iCarousel.m */,
+				1CAD743A21E7DFAB0096A99D /* AppDelegate.swift */,
+				1CAD743C21E7DFAB0096A99D /* ViewController.swift */,
+				1CAD743E21E7DFAB0096A99D /* Main.storyboard */,
+				1CAD744421E7DFAF0096A99D /* Assets.xcassets */,
+				1CAD744621E7DFAF0096A99D /* LaunchScreen.storyboard */,
+				1CAD744921E7DFAF0096A99D /* Info.plist */,
+				1CAD748521E7EE1B0096A99D /* Slide.swift */,
+				1CAD748621E7EE1B0096A99D /* Slide.xib */,
+				1CAD744121E7DFAB0096A99D /* CelerDemo.xcdatamodeld */,
+				1CAD748A21E7FB750096A99D /* CelerDemo-Bridging-Header.h */,
+			);
+			path = CelerDemo;
+			sourceTree = "<group>";
+		};
+		1CAD745121E7DFAF0096A99D /* CelerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CAD745221E7DFAF0096A99D /* CelerDemoTests.swift */,
+				1CAD745421E7DFAF0096A99D /* Info.plist */,
+			);
+			path = CelerDemoTests;
+			sourceTree = "<group>";
+		};
+		1CAD745C21E7DFAF0096A99D /* CelerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1CAD745D21E7DFAF0096A99D /* CelerDemoUITests.swift */,
+				1CAD745F21E7DFAF0096A99D /* Info.plist */,
+			);
+			path = CelerDemoUITests;
+			sourceTree = "<group>";
+		};
+		1CAD748E21E7FB960096A99D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CAD748F21E7FB970096A99D /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CAD743621E7DFAB0096A99D /* CelerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CAD746221E7DFAF0096A99D /* Build configuration list for PBXNativeTarget "CelerDemo" */;
+			buildPhases = (
+				1CAD743321E7DFAB0096A99D /* Sources */,
+				1CAD743421E7DFAB0096A99D /* Frameworks */,
+				1CAD743521E7DFAB0096A99D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CelerDemo;
+			productName = CelerDemo;
+			productReference = 1CAD743721E7DFAB0096A99D /* CelerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CAD744D21E7DFAF0096A99D /* CelerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CAD746521E7DFAF0096A99D /* Build configuration list for PBXNativeTarget "CelerDemoTests" */;
+			buildPhases = (
+				1CAD744A21E7DFAF0096A99D /* Sources */,
+				1CAD744B21E7DFAF0096A99D /* Frameworks */,
+				1CAD744C21E7DFAF0096A99D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CAD745021E7DFAF0096A99D /* PBXTargetDependency */,
+			);
+			name = CelerDemoTests;
+			productName = CelerDemoTests;
+			productReference = 1CAD744E21E7DFAF0096A99D /* CelerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1CAD745821E7DFAF0096A99D /* CelerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CAD746821E7DFAF0096A99D /* Build configuration list for PBXNativeTarget "CelerDemoUITests" */;
+			buildPhases = (
+				1CAD745521E7DFAF0096A99D /* Sources */,
+				1CAD745621E7DFAF0096A99D /* Frameworks */,
+				1CAD745721E7DFAF0096A99D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CAD745B21E7DFAF0096A99D /* PBXTargetDependency */,
+			);
+			name = CelerDemoUITests;
+			productName = CelerDemoUITests;
+			productReference = 1CAD745921E7DFAF0096A99D /* CelerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CAD742F21E7DFAB0096A99D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Caitlyn Chen";
+				TargetAttributes = {
+					1CAD743621E7DFAB0096A99D = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+					1CAD744D21E7DFAF0096A99D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1CAD743621E7DFAB0096A99D;
+					};
+					1CAD745821E7DFAF0096A99D = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 1CAD743621E7DFAB0096A99D;
+					};
+				};
+			};
+			buildConfigurationList = 1CAD743221E7DFAB0096A99D /* Build configuration list for PBXProject "CelerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CAD742E21E7DFAB0096A99D;
+			productRefGroup = 1CAD743821E7DFAB0096A99D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CAD743621E7DFAB0096A99D /* CelerDemo */,
+				1CAD744D21E7DFAF0096A99D /* CelerDemoTests */,
+				1CAD745821E7DFAF0096A99D /* CelerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CAD743521E7DFAB0096A99D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CAD744821E7DFAF0096A99D /* LaunchScreen.storyboard in Resources */,
+				1CAD744521E7DFAF0096A99D /* Assets.xcassets in Resources */,
+				1CAD744021E7DFAB0096A99D /* Main.storyboard in Resources */,
+				1CAD748821E7EE1B0096A99D /* Slide.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CAD744C21E7DFAF0096A99D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CAD745721E7DFAF0096A99D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CAD743321E7DFAB0096A99D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CAD744321E7DFAB0096A99D /* CelerDemo.xcdatamodeld in Sources */,
+				1CAD749321E80B3F0096A99D /* iCarousel.m in Sources */,
+				1CAD743D21E7DFAB0096A99D /* ViewController.swift in Sources */,
+				1CAD743B21E7DFAB0096A99D /* AppDelegate.swift in Sources */,
+				1CAD748721E7EE1B0096A99D /* Slide.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CAD744A21E7DFAF0096A99D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CAD745321E7DFAF0096A99D /* CelerDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CAD745521E7DFAF0096A99D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CAD745E21E7DFAF0096A99D /* CelerDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CAD745021E7DFAF0096A99D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CAD743621E7DFAB0096A99D /* CelerDemo */;
+			targetProxy = 1CAD744F21E7DFAF0096A99D /* PBXContainerItemProxy */;
+		};
+		1CAD745B21E7DFAF0096A99D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CAD743621E7DFAB0096A99D /* CelerDemo */;
+			targetProxy = 1CAD745A21E7DFAF0096A99D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CAD743E21E7DFAB0096A99D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CAD743F21E7DFAB0096A99D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1CAD744621E7DFAF0096A99D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CAD744721E7DFAF0096A99D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CAD746021E7DFAF0096A99D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1CAD746121E7DFAF0096A99D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1CAD746321E7DFAF0096A99D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6859WY94X9;
+				INFOPLIST_FILE = CelerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caitlynchen.CelerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CelerDemo/CelerDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1CAD746421E7DFAF0096A99D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6859WY94X9;
+				INFOPLIST_FILE = CelerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caitlynchen.CelerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CelerDemo/CelerDemo-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1CAD746621E7DFAF0096A99D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P52BHBX235;
+				INFOPLIST_FILE = CelerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caitlynchen.CelerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CelerDemo.app/CelerDemo";
+			};
+			name = Debug;
+		};
+		1CAD746721E7DFAF0096A99D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P52BHBX235;
+				INFOPLIST_FILE = CelerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caitlynchen.CelerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CelerDemo.app/CelerDemo";
+			};
+			name = Release;
+		};
+		1CAD746921E7DFAF0096A99D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P52BHBX235;
+				INFOPLIST_FILE = CelerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caitlynchen.CelerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CelerDemo;
+			};
+			name = Debug;
+		};
+		1CAD746A21E7DFAF0096A99D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P52BHBX235;
+				INFOPLIST_FILE = CelerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caitlynchen.CelerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CelerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CAD743221E7DFAB0096A99D /* Build configuration list for PBXProject "CelerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CAD746021E7DFAF0096A99D /* Debug */,
+				1CAD746121E7DFAF0096A99D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CAD746221E7DFAF0096A99D /* Build configuration list for PBXNativeTarget "CelerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CAD746321E7DFAF0096A99D /* Debug */,
+				1CAD746421E7DFAF0096A99D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CAD746521E7DFAF0096A99D /* Build configuration list for PBXNativeTarget "CelerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CAD746621E7DFAF0096A99D /* Debug */,
+				1CAD746721E7DFAF0096A99D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CAD746821E7DFAF0096A99D /* Build configuration list for PBXNativeTarget "CelerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CAD746921E7DFAF0096A99D /* Debug */,
+				1CAD746A21E7DFAF0096A99D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1CAD744121E7DFAB0096A99D /* CelerDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1CAD744221E7DFAB0096A99D /* CelerDemo.xcdatamodel */,
+			);
+			currentVersion = 1CAD744221E7DFAB0096A99D /* CelerDemo.xcdatamodel */;
+			path = CelerDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1CAD742F21E7DFAB0096A99D /* Project object */;
+}
