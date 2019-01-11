@@ -39,6 +39,7 @@ class ViewController: UIViewController, UIScrollViewDelegate{
         
         slides = createSlides()
         setupSlideScrollView(slides: slides)
+        
     
     }
     
@@ -88,6 +89,11 @@ class ViewController: UIViewController, UIScrollViewDelegate{
             slides[i].frame = CGRect(x: scrollView.frame.width * CGFloat(i), y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
             scrollView.addSubview(slides[i])
         }
+
+    }
+    
+    func carouselCurrentItemIndexDidChange(_ carousel: iCarousel) {
+        self.scrollView.setContentOffset(CGPoint(x: scrollView.frame.width * CGFloat(iCarouselView.currentItemIndex), y: 0), animated: true)
     }
     
 
