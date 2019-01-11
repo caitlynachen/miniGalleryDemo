@@ -12,15 +12,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Slide" customModule="OnboardingExample" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Slide" customModule="CelerDemo" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mjR-vv-IHv">
-                    <rect key="frame" x="0.0" y="75" width="375" height="267"/>
+                    <rect key="frame" x="0.0" y="75" width="375" height="250"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="267" id="KgX-Dg-j50"/>
+                        <constraint firstAttribute="height" constant="250" id="KgX-Dg-j50"/>
                         <constraint firstAttribute="width" constant="375" id="VI1-SE-0FZ"/>
                     </constraints>
                 </view>
@@ -54,8 +54,8 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="labelTitle" destination="zyz-yE-tYh" id="o8d-aJ-Km2"/>
-                <outlet property="view" destination="mjR-vv-IHv" id="qqm-s1-n4V"/>
+                <outlet property="labelTitle" destination="zyz-yE-tYh" id="c7H-gY-OHF"/>
+                <outlet property="view" destination="mjR-vv-IHv" id="BgN-o5-LUJ"/>
             </connections>
             <point key="canvasLocation" x="130.40000000000001" y="153.37331334332833"/>
         </view>

@@ -15,10 +15,10 @@
 		1CAD744821E7DFAF0096A99D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CAD744621E7DFAF0096A99D /* LaunchScreen.storyboard */; };
 		1CAD745321E7DFAF0096A99D /* CelerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAD745221E7DFAF0096A99D /* CelerDemoTests.swift */; };
 		1CAD745E21E7DFAF0096A99D /* CelerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAD745D21E7DFAF0096A99D /* CelerDemoUITests.swift */; };
-		1CAD748721E7EE1B0096A99D /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAD748521E7EE1B0096A99D /* Slide.swift */; };
 		1CAD748821E7EE1B0096A99D /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CAD748621E7EE1B0096A99D /* Slide.xib */; };
 		1CAD749021E7FB970096A99D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAD748F21E7FB970096A99D /* QuartzCore.framework */; };
 		1CAD749321E80B3F0096A99D /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CAD749221E80B3E0096A99D /* iCarousel.m */; };
+		1CC1481E21E94218008D4356 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1481D21E94218008D4356 /* Slide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,12 +53,12 @@
 		1CAD745921E7DFAF0096A99D /* CelerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CelerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CAD745D21E7DFAF0096A99D /* CelerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelerDemoUITests.swift; sourceTree = "<group>"; };
 		1CAD745F21E7DFAF0096A99D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1CAD748521E7EE1B0096A99D /* Slide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Slide.swift; path = "../../../Downloads/OnboardingSample-master 2/OnboardingExample/views/Slide.swift"; sourceTree = "<group>"; };
 		1CAD748621E7EE1B0096A99D /* Slide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		1CAD748A21E7FB750096A99D /* CelerDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CelerDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		1CAD748F21E7FB970096A99D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1CAD749121E80B3E0096A99D /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		1CAD749221E80B3E0096A99D /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
+		1CC1481D21E94218008D4356 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +111,7 @@
 		1CAD743921E7DFAB0096A99D /* CelerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1CC1481D21E94218008D4356 /* Slide.swift */,
 				1CAD749121E80B3E0096A99D /* iCarousel.h */,
 				1CAD749221E80B3E0096A99D /* iCarousel.m */,
 				1CAD743A21E7DFAB0096A99D /* AppDelegate.swift */,
@@ -119,7 +120,6 @@
 				1CAD744421E7DFAF0096A99D /* Assets.xcassets */,
 				1CAD744621E7DFAF0096A99D /* LaunchScreen.storyboard */,
 				1CAD744921E7DFAF0096A99D /* Info.plist */,
-				1CAD748521E7EE1B0096A99D /* Slide.swift */,
 				1CAD748621E7EE1B0096A99D /* Slide.xib */,
 				1CAD744121E7DFAB0096A99D /* CelerDemo.xcdatamodeld */,
 				1CAD748A21E7FB750096A99D /* CelerDemo-Bridging-Header.h */,
@@ -290,7 +290,7 @@
 				1CAD749321E80B3F0096A99D /* iCarousel.m in Sources */,
 				1CAD743D21E7DFAB0096A99D /* ViewController.swift in Sources */,
 				1CAD743B21E7DFAB0096A99D /* AppDelegate.swift in Sources */,
-				1CAD748721E7EE1B0096A99D /* Slide.swift in Sources */,
+				1CC1481E21E94218008D4356 /* Slide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
