@@ -20,7 +20,7 @@ class ViewController: UIViewController, UIScrollViewDelegate{
     @IBOutlet weak var scrollView: UIScrollView!
     
     var slides:[Slide] = [];
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.delegate = self
@@ -29,18 +29,19 @@ class ViewController: UIViewController, UIScrollViewDelegate{
         
         iCarouselView.delegate = self
         iCarouselView.dataSource = self
-
-
+        
+        
         iCarouselView.type = .rotary
         iCarouselView.contentMode = .scaleAspectFill
         iCarouselView.isPagingEnabled = true
+        
         
         iCarouselView.reloadData()
         
         slides = createSlides()
         setupSlideScrollView(slides: slides)
         
-    
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -48,7 +49,6 @@ class ViewController: UIViewController, UIScrollViewDelegate{
         
     }
     
-
     
     func createSlides() -> [Slide] {
         
@@ -89,14 +89,34 @@ class ViewController: UIViewController, UIScrollViewDelegate{
             slides[i].frame = CGRect(x: scrollView.frame.width * CGFloat(i), y: 0, width: scrollView.frame.width, height: scrollView.frame.height)
             scrollView.addSubview(slides[i])
         }
-
+        
     }
     
-    func carouselCurrentItemIndexDidChange(_ carousel: iCarousel) {
+    func carouselDidScroll(_ carousel: iCarousel) {
         self.scrollView.setContentOffset(CGPoint(x: scrollView.frame.width * CGFloat(iCarouselView.currentItemIndex), y: 0), animated: true)
     }
     
-
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let x = self.scrollView.contentOffset.x
+        let offset = x / self.scrollView.frame.width
+        
+        print(offset)
+        
+        if offset == 0{
+            iCarouselView.scrollToItem(at: 0, duration: 0)
+        } else if offset == 1 {
+            iCarouselView.scrollToItem(at: 1, duration: 0)
+        } else if offset == 2{
+            iCarouselView.scrollToItem(at: 2, duration: 0)
+        } else if offset == 3{
+            iCarouselView.scrollToItem(at: 3, duration: 0)
+        } else if offset == 4{
+            iCarouselView.scrollToItem(at: 4, duration: 0)
+        } else if offset == 5{
+            iCarouselView.scrollToItem(at: 5, duration: 0)
+        }
+    }
+    
 }
 
 extension ViewController: iCarouselDelegate, iCarouselDataSource {
