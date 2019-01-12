@@ -10,12 +10,21 @@ import UIKit
 import AVKit
 import SnapKit
 
-class ViewController: UIViewController, UIScrollViewDelegate{
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
+    
     
     @IBOutlet weak var collectionView: UICollectionView!
     //    @IBOutlet weak var iCarouselView: iCarousel!
     
     var iCarouselView: iCarousel!
+    
+    var movieNames = ["Joe", "Man On a Ledge", "The Hunted", "Igor", "Teeth", "The Town That Dreaded Sundown"]
+    var urlStr = ["https://media.giphy.com/media/l0ExncehJzexFpRHq/giphy.mp4",
+                  "https://media.giphy.com/media/26gsqQxPQXHBiBEUU/giphy.mp4",
+                  "https://media.giphy.com/media/oqLgjAahmDPvG/giphy.mp4",
+                  "https://media.giphy.com/media/d1E1szXDsHUs3WvK/giphy.mp4",
+                  "https://media.giphy.com/media/OiJjUsdAb11aE/giphy.mp4",
+                  "https://media.giphy.com/media/4My4Bdf4cakLu/giphy.mp4"]
     
     
     private var isfirstTimeTransform = false
@@ -29,11 +38,15 @@ class ViewController: UIViewController, UIScrollViewDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        scrollView.delegate = self
-        scrollView.showsVerticalScrollIndicator = false
+        collectionView!.register(Slide.self, forCellWithReuseIdentifier: "cell")
+        
+        collectionView!.delegate = self
+        collectionView!.dataSource = self
+//        scrollView.delegate = self
+//        scrollView.showsVerticalScrollIndicator = false
         iCarouselView = iCarousel(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.width))
-        slides = createSlides()
-        setupSlideScrollView(slides: slides)
+//        slides = createSlides()
+//        setupSlideScrollView(slides: slides)
         
         //        self.view.addSubview(scrollView)
         self.view.addSubview(iCarouselView)
@@ -53,7 +66,7 @@ class ViewController: UIViewController, UIScrollViewDelegate{
         
         iCarouselView.reloadData()
         
-        
+        collectionView.reloadData()
         
     }
     
@@ -62,7 +75,21 @@ class ViewController: UIViewController, UIScrollViewDelegate{
         
     }
     
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 6
+    }
     
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! Slide
+        
+        cell.playVideo(urlStr: urlStr[indexPath.row])
+        cell.labelTitle.text = movieNames[indexPath.row]
+        
+        return cell
+    }
+    
+    
+    /*
     func createSlides() -> [Slide] {
         
         let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
@@ -114,6 +141,9 @@ class ViewController: UIViewController, UIScrollViewDelegate{
         }
         
     }
+    */
+    
+    /*
     
     func carouselDidScroll(_ carousel: iCarousel) {
         self.scrollView.setContentOffset(CGPoint(x: scrollView.frame.width * CGFloat(iCarouselView.currentItemIndex), y: 0), animated: true)
@@ -137,7 +167,7 @@ class ViewController: UIViewController, UIScrollViewDelegate{
             iCarouselView.scrollToItem(at: 5, duration: 0)
         }
     }
-    
+    */
 }
 
 extension ViewController: iCarouselDelegate, iCarouselDataSource {

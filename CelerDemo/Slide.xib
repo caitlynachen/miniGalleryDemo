@@ -32,9 +32,6 @@
                 <constraint firstItem="mjR-vv-IHv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="z0v-qP-7OW"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <connections>
-                <outlet property="view" destination="mjR-vv-IHv" id="XU1-VN-2Ju"/>
-            </connections>
             <point key="canvasLocation" x="130.40000000000001" y="153.37331334332833"/>
         </view>
     </objects>
