@@ -53,8 +53,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="iCarouselView" destination="CSF-c5-KpJ" id="qtu-3X-Whm"/>
-                        <outlet property="scrollView" destination="J5a-Lb-aBP" id="iW7-6h-5ER"/>
+                        <outlet property="scrollView" destination="J5a-Lb-aBP" id="exp-Ac-91Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

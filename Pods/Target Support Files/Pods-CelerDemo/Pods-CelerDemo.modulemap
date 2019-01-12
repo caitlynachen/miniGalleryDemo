@@ -1,0 +1,6 @@
+module Pods_CelerDemo {
+  umbrella header "Pods-CelerDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

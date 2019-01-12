@@ -24,38 +24,16 @@
                         <constraint firstAttribute="width" constant="375" id="VI1-SE-0FZ"/>
                     </constraints>
                 </view>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zyz-yE-tYh" userLabel="Title">
-                    <rect key="frame" x="0.0" y="30" width="375" height="37"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="37" id="9Wy-e3-ILa"/>
-                        <constraint firstAttribute="width" constant="375" id="iZn-Y0-w9z"/>
-                    </constraints>
-                    <attributedString key="attributedText">
-                        <fragment content="Winnie the Pooh">
-                            <attributes>
-                                <color key="NSColor" red="0.4039215686" green="0.2274509804" blue="0.71764705880000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <font key="NSFont" metaFont="system" size="18"/>
-                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                            </attributes>
-                        </fragment>
-                    </attributedString>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                </textView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="zyz-yE-tYh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MD6-nK-32n"/>
-                <constraint firstItem="zyz-yE-tYh" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="V0c-x2-irM"/>
                 <constraint firstItem="mjR-vv-IHv" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="jRZ-eW-8rk"/>
-                <constraint firstItem="zyz-yE-tYh" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="oqG-iu-gEq"/>
                 <constraint firstItem="mjR-vv-IHv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="55" id="xRo-ca-J7X"/>
                 <constraint firstItem="mjR-vv-IHv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="z0v-qP-7OW"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="labelTitle" destination="zyz-yE-tYh" id="c7H-gY-OHF"/>
-                <outlet property="view" destination="mjR-vv-IHv" id="BgN-o5-LUJ"/>
+                <outlet property="view" destination="mjR-vv-IHv" id="XU1-VN-2Ju"/>
             </connections>
             <point key="canvasLocation" x="130.40000000000001" y="153.37331334332833"/>
         </view>

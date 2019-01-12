@@ -17,8 +17,12 @@
 		1CAD745E21E7DFAF0096A99D /* CelerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAD745D21E7DFAF0096A99D /* CelerDemoUITests.swift */; };
 		1CAD748821E7EE1B0096A99D /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CAD748621E7EE1B0096A99D /* Slide.xib */; };
 		1CAD749021E7FB970096A99D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CAD748F21E7FB970096A99D /* QuartzCore.framework */; };
-		1CAD749321E80B3F0096A99D /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CAD749221E80B3E0096A99D /* iCarousel.m */; };
 		1CC1481E21E94218008D4356 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1481D21E94218008D4356 /* Slide.swift */; };
+		1CC1482121E9D116008D4356 /* Createable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1482021E9D116008D4356 /* Createable.swift */; };
+		1CC1482321EA8C1F008D4356 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC1482221EA8C1F008D4356 /* Style.swift */; };
+		3B0DA477EB52858A2FFDCB27 /* libPods-CelerDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FED4BA5ABE2109DD984CCF2 /* libPods-CelerDemoTests.a */; };
+		B3B9265A1DB8C29743557566 /* libPods-CelerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6946AC4FC2B649E603734A /* libPods-CelerDemo.a */; };
+		CA5B1FA6D7896C87633F9348 /* libPods-CelerDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC59B4521851A835DDD78CB /* libPods-CelerDemoUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,11 +58,20 @@
 		1CAD745D21E7DFAF0096A99D /* CelerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelerDemoUITests.swift; sourceTree = "<group>"; };
 		1CAD745F21E7DFAF0096A99D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CAD748621E7EE1B0096A99D /* Slide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
-		1CAD748A21E7FB750096A99D /* CelerDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CelerDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		1CAD748F21E7FB970096A99D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		1CAD749121E80B3E0096A99D /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
-		1CAD749221E80B3E0096A99D /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		1CC1481D21E94218008D4356 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		1CC1481F21E9B321008D4356 /* CelerDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CelerDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		1CC1482021E9D116008D4356 /* Createable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Createable.swift; sourceTree = "<group>"; };
+		1CC1482221EA8C1F008D4356 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		1EC59B4521851A835DDD78CB /* libPods-CelerDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CelerDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		28A27C6188B59831D957DAA5 /* Pods-CelerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CelerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CelerDemo/Pods-CelerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3FED4BA5ABE2109DD984CCF2 /* libPods-CelerDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CelerDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5652641505D13E8EB45A7DE3 /* Pods-CelerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CelerDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CelerDemoTests/Pods-CelerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		64188C20D5424D41B0DB3A92 /* Pods-CelerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CelerDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CelerDemoTests/Pods-CelerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		721583E9C6FCE1C7252FE92D /* Pods-CelerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CelerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CelerDemo/Pods-CelerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		ADAE05BB6744D24ACAE97415 /* Pods-CelerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CelerDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CelerDemoUITests/Pods-CelerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA6946AC4FC2B649E603734A /* libPods-CelerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CelerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB82B164239E6129C3158598 /* Pods-CelerDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CelerDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CelerDemoUITests/Pods-CelerDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CAD749021E7FB970096A99D /* QuartzCore.framework in Frameworks */,
+				B3B9265A1DB8C29743557566 /* libPods-CelerDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B0DA477EB52858A2FFDCB27 /* libPods-CelerDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA5B1FA6D7896C87633F9348 /* libPods-CelerDemoUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +111,7 @@
 				1CAD745C21E7DFAF0096A99D /* CelerDemoUITests */,
 				1CAD743821E7DFAB0096A99D /* Products */,
 				1CAD748E21E7FB960096A99D /* Frameworks */,
+				C6717ADA40EEE82B2B26507F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,17 +129,17 @@
 			isa = PBXGroup;
 			children = (
 				1CC1481D21E94218008D4356 /* Slide.swift */,
-				1CAD749121E80B3E0096A99D /* iCarousel.h */,
-				1CAD749221E80B3E0096A99D /* iCarousel.m */,
+				1CC1482021E9D116008D4356 /* Createable.swift */,
 				1CAD743A21E7DFAB0096A99D /* AppDelegate.swift */,
 				1CAD743C21E7DFAB0096A99D /* ViewController.swift */,
+				1CC1481F21E9B321008D4356 /* CelerDemo-Bridging-Header.h */,
 				1CAD743E21E7DFAB0096A99D /* Main.storyboard */,
+				1CC1482221EA8C1F008D4356 /* Style.swift */,
 				1CAD744421E7DFAF0096A99D /* Assets.xcassets */,
 				1CAD744621E7DFAF0096A99D /* LaunchScreen.storyboard */,
 				1CAD744921E7DFAF0096A99D /* Info.plist */,
 				1CAD748621E7EE1B0096A99D /* Slide.xib */,
 				1CAD744121E7DFAB0096A99D /* CelerDemo.xcdatamodeld */,
-				1CAD748A21E7FB750096A99D /* CelerDemo-Bridging-Header.h */,
 			);
 			path = CelerDemo;
 			sourceTree = "<group>";
@@ -149,8 +166,24 @@
 			isa = PBXGroup;
 			children = (
 				1CAD748F21E7FB970096A99D /* QuartzCore.framework */,
+				BA6946AC4FC2B649E603734A /* libPods-CelerDemo.a */,
+				3FED4BA5ABE2109DD984CCF2 /* libPods-CelerDemoTests.a */,
+				1EC59B4521851A835DDD78CB /* libPods-CelerDemoUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6717ADA40EEE82B2B26507F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28A27C6188B59831D957DAA5 /* Pods-CelerDemo.debug.xcconfig */,
+				721583E9C6FCE1C7252FE92D /* Pods-CelerDemo.release.xcconfig */,
+				64188C20D5424D41B0DB3A92 /* Pods-CelerDemoTests.debug.xcconfig */,
+				5652641505D13E8EB45A7DE3 /* Pods-CelerDemoTests.release.xcconfig */,
+				ADAE05BB6744D24ACAE97415 /* Pods-CelerDemoUITests.debug.xcconfig */,
+				FB82B164239E6129C3158598 /* Pods-CelerDemoUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CAD746221E7DFAF0096A99D /* Build configuration list for PBXNativeTarget "CelerDemo" */;
 			buildPhases = (
+				3E6F7404225974F1FB1D905B /* [CP] Check Pods Manifest.lock */,
 				1CAD743321E7DFAB0096A99D /* Sources */,
 				1CAD743421E7DFAB0096A99D /* Frameworks */,
 				1CAD743521E7DFAB0096A99D /* Resources */,
@@ -177,6 +211,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CAD746521E7DFAF0096A99D /* Build configuration list for PBXNativeTarget "CelerDemoTests" */;
 			buildPhases = (
+				6E798CEBA8677BC760E95F5A /* [CP] Check Pods Manifest.lock */,
 				1CAD744A21E7DFAF0096A99D /* Sources */,
 				1CAD744B21E7DFAF0096A99D /* Frameworks */,
 				1CAD744C21E7DFAF0096A99D /* Resources */,
@@ -195,6 +230,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CAD746821E7DFAF0096A99D /* Build configuration list for PBXNativeTarget "CelerDemoUITests" */;
 			buildPhases = (
+				C89E5C5BCBD01656751CE1D7 /* [CP] Check Pods Manifest.lock */,
 				1CAD745521E7DFAF0096A99D /* Sources */,
 				1CAD745621E7DFAF0096A99D /* Frameworks */,
 				1CAD745721E7DFAF0096A99D /* Resources */,
@@ -281,15 +317,85 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E6F7404225974F1FB1D905B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CelerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E798CEBA8677BC760E95F5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CelerDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C89E5C5BCBD01656751CE1D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CelerDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1CAD743321E7DFAB0096A99D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1CAD744321E7DFAB0096A99D /* CelerDemo.xcdatamodeld in Sources */,
-				1CAD749321E80B3F0096A99D /* iCarousel.m in Sources */,
+				1CC1482321EA8C1F008D4356 /* Style.swift in Sources */,
 				1CAD743D21E7DFAB0096A99D /* ViewController.swift in Sources */,
 				1CAD743B21E7DFAB0096A99D /* AppDelegate.swift in Sources */,
+				1CC1482121E9D116008D4356 /* Createable.swift in Sources */,
 				1CC1481E21E94218008D4356 /* Slide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +508,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "CelerDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -456,6 +563,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "CelerDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -463,6 +571,7 @@
 		};
 		1CAD746321E7DFAF0096A99D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28A27C6188B59831D957DAA5 /* Pods-CelerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -484,6 +593,7 @@
 		};
 		1CAD746421E7DFAF0096A99D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 721583E9C6FCE1C7252FE92D /* Pods-CelerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -504,6 +614,7 @@
 		};
 		1CAD746621E7DFAF0096A99D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64188C20D5424D41B0DB3A92 /* Pods-CelerDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -525,6 +636,7 @@
 		};
 		1CAD746721E7DFAF0096A99D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5652641505D13E8EB45A7DE3 /* Pods-CelerDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -546,6 +658,7 @@
 		};
 		1CAD746921E7DFAF0096A99D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADAE05BB6744D24ACAE97415 /* Pods-CelerDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -566,6 +679,7 @@
 		};
 		1CAD746A21E7DFAF0096A99D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB82B164239E6129C3158598 /* Pods-CelerDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

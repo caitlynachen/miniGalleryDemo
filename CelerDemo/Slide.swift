@@ -8,12 +8,37 @@
 
 import UIKit
 import AVKit
+import SnapKit
 
 class Slide: UIView {
 
-    @IBOutlet weak var labelTitle: UITextView!
+//    @IBOutlet weak var labelTitle: UITextView!
     @IBOutlet weak var view: UIView!
     
+    private let labelTitle: UILabel = .create {
+        $0.font = Style.Font.h3Heavy
+        $0.textColor = .black
+        $0.textAlignment = .center
+    }
+//    private let view = UIView(frame: .zero)
+    
+    func configure(str: String){
+        labelTitle.text = str
+        addSubview(labelTitle)
+        labelTitle.snp.makeConstraints { (make) in
+            make.top.equalToSuperview().inset(30)
+            make.centerX.equalToSuperview()
+            
+        }
+        
+//        addSubview(view)
+//        view.snp.makeConstraints { (make) in
+//            make.top.equalToSuperview().inset(30)
+//            make.left.equalToSuperview().inset(10)
+//            make.right.equalToSuperview().inset(10)
+//        }
+        
+    }
     
     
     func playVideo(urlStr: String){

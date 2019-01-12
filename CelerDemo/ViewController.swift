@@ -8,14 +8,20 @@
 
 import UIKit
 import AVKit
+import SnapKit
 
 class ViewController: UIViewController, UIScrollViewDelegate{
     
-    @IBOutlet weak var iCarouselView: iCarousel!
+    @IBOutlet weak var collectionView: UICollectionView!
+    //    @IBOutlet weak var iCarouselView: iCarousel!
+    
+    var iCarouselView: iCarousel!
+    
     
     private var isfirstTimeTransform = false
     var images: [UIImage] = [#imageLiteral(resourceName: "image"), #imageLiteral(resourceName: "animal_number_2"), #imageLiteral(resourceName: "animal_number_3"), #imageLiteral(resourceName: "animal_number_4"), #imageLiteral(resourceName: "animal_number_5"),#imageLiteral(resourceName: "animal_number_6 (1)")]
     
+    //    var scrollView = UIScrollView(frame: .zero)
     
     @IBOutlet weak var scrollView: UIScrollView!
     
@@ -25,7 +31,14 @@ class ViewController: UIViewController, UIScrollViewDelegate{
         super.viewDidLoad()
         scrollView.delegate = self
         scrollView.showsVerticalScrollIndicator = false
-
+        iCarouselView = iCarousel(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.width))
+        slides = createSlides()
+        setupSlideScrollView(slides: slides)
+        
+        //        self.view.addSubview(scrollView)
+        self.view.addSubview(iCarouselView)
+        configure()
+        
         // Do any additional setup after loading the view, typically from a nib.
         isfirstTimeTransform = true
         
@@ -40,8 +53,6 @@ class ViewController: UIViewController, UIScrollViewDelegate{
         
         iCarouselView.reloadData()
         
-        slides = createSlides()
-        setupSlideScrollView(slides: slides)
         
         
     }
@@ -55,28 +66,38 @@ class ViewController: UIViewController, UIScrollViewDelegate{
     func createSlides() -> [Slide] {
         
         let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+        slide1.configure(str: "Joe")
         slide1.playVideo(urlStr: "https://media.giphy.com/media/l0ExncehJzexFpRHq/giphy.mp4")
-        slide1.labelTitle.text = "Joe"
         
         let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+        slide1.configure(str: "Man On A Ledge")
+
         slide2.playVideo(urlStr: "https://media.giphy.com/media/26gsqQxPQXHBiBEUU/giphy.mp4")
-        slide2.labelTitle.text = "Man On A Ledge"
+//        slide2.labelTitle.text = "Man On A Ledge"
         
         let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+        slide1.configure(str: "The Hunted")
+
         slide3.playVideo(urlStr: "https://media.giphy.com/media/oqLgjAahmDPvG/giphy.mp4")
-        slide3.labelTitle.text = "The Hunted"
+//        slide3.labelTitle.text = "The Hunted"
         
         let slide4:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+        slide1.configure(str: "Igor")
+
         slide4.playVideo(urlStr: "https://media.giphy.com/media/d1E1szXDsHUs3WvK/giphy.mp4")
-        slide4.labelTitle.text = "Igor"
+//        slide4.labelTitle.text = "Igor"
         
         let slide5:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+        slide1.configure(str: "Teeth")
+
         slide5.playVideo(urlStr: "https://media.giphy.com/media/OiJjUsdAb11aE/giphy.mp4")
-        slide5.labelTitle.text = "Teeth"
+//        slide5.labelTitle.text = "Teeth"
         
         let slide6:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
+        slide1.configure(str: "The Town That Dreaded Sundown")
+
         slide6.playVideo(urlStr: "https://media.giphy.com/media/4My4Bdf4cakLu/giphy.mp4")
-        slide6.labelTitle.text = "The Town That Dreaded Sundown"
+//        slide6.labelTitle.text = "The Town That Dreaded Sundown"
         
         
         return [slide1, slide2, slide3, slide4, slide5, slide6]
@@ -137,6 +158,27 @@ extension ViewController: iCarouselDelegate, iCarouselDataSource {
         imageView.image = images[index]
         return imageView
     }
+    
+    func configure(){
+        //        scrollView.snp.makeConstraints { (make) in
+        //            make.top.equalToSuperview().inset(10)
+        //            make.left.equalToSuperview().inset(10)
+        //            make.right.equalToSuperview().inset(10)
+        //            make.height.equalTo(250)
+        //
+        //        }
+        iCarouselView.snp.makeConstraints { (make) in
+            make.bottom.equalToSuperview().inset(30)
+            make.left.equalToSuperview().offset(10)
+            make.right.equalToSuperview().offset(10)
+            make.height.equalTo(128)
+            
+        }
+        
+        
+        
+    }
+    
     
     
 }
