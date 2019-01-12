@@ -143,15 +143,15 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     */
     
-    /*
+
     
     func carouselDidScroll(_ carousel: iCarousel) {
-        self.scrollView.setContentOffset(CGPoint(x: scrollView.frame.width * CGFloat(iCarouselView.currentItemIndex), y: 0), animated: true)
+        self.collectionView.setContentOffset(CGPoint(x: collectionView.frame.width * CGFloat(iCarouselView.currentItemIndex), y: 0), animated: true)
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let x = self.scrollView.contentOffset.x
-        let offset = x / self.scrollView.frame.width
+        let x = self.collectionView.contentOffset.x
+        let offset = x / self.collectionView.frame.width
         
         if offset == 0{
             iCarouselView.scrollToItem(at: 0, duration: 0)
@@ -167,7 +167,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             iCarouselView.scrollToItem(at: 5, duration: 0)
         }
     }
-    */
+ 
+    
 }
 
 extension ViewController: iCarouselDelegate, iCarouselDataSource {
