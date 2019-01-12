@@ -23,11 +23,13 @@ class Slide: UIView {
         let playerLayer = AVPlayerLayer(player: player)
         playerLayer.frame = view.bounds
         view.layer.addSublayer(playerLayer)
+
         player.play()
         NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime, object: player.currentItem, queue: .main) { [weak self] _ in
     player.seek(to: CMTime.zero)
             player.play()
         }
+
 
     }
     

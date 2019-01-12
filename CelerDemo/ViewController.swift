@@ -24,6 +24,8 @@ class ViewController: UIViewController, UIScrollViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.delegate = self
+        scrollView.showsVerticalScrollIndicator = false
+
         // Do any additional setup after loading the view, typically from a nib.
         isfirstTimeTransform = true
         
@@ -31,7 +33,7 @@ class ViewController: UIViewController, UIScrollViewDelegate{
         iCarouselView.dataSource = self
         
         
-        iCarouselView.type = .rotary
+        iCarouselView.type = .coverFlow
         iCarouselView.contentMode = .scaleAspectFill
         iCarouselView.isPagingEnabled = true
         
@@ -99,8 +101,6 @@ class ViewController: UIViewController, UIScrollViewDelegate{
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let x = self.scrollView.contentOffset.x
         let offset = x / self.scrollView.frame.width
-        
-        print(offset)
         
         if offset == 0{
             iCarouselView.scrollToItem(at: 0, duration: 0)
