@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1CAD743B21E7DFAB0096A99D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAD743A21E7DFAB0096A99D /* AppDelegate.swift */; };
 		1CAD743D21E7DFAB0096A99D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAD743C21E7DFAB0096A99D /* ViewController.swift */; };
-		1CAD744021E7DFAB0096A99D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CAD743E21E7DFAB0096A99D /* Main.storyboard */; };
 		1CAD744321E7DFAB0096A99D /* CelerDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1CAD744121E7DFAB0096A99D /* CelerDemo.xcdatamodeld */; };
 		1CAD744521E7DFAF0096A99D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CAD744421E7DFAF0096A99D /* Assets.xcassets */; };
 		1CAD744821E7DFAF0096A99D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CAD744621E7DFAF0096A99D /* LaunchScreen.storyboard */; };
@@ -46,7 +45,6 @@
 		1CAD743721E7DFAB0096A99D /* CelerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CelerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CAD743A21E7DFAB0096A99D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CAD743C21E7DFAB0096A99D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1CAD743F21E7DFAB0096A99D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1CAD744221E7DFAB0096A99D /* CelerDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CelerDemo.xcdatamodel; sourceTree = "<group>"; };
 		1CAD744421E7DFAF0096A99D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CAD744721E7DFAF0096A99D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -133,7 +131,6 @@
 				1CAD743A21E7DFAB0096A99D /* AppDelegate.swift */,
 				1CAD743C21E7DFAB0096A99D /* ViewController.swift */,
 				1CC1481F21E9B321008D4356 /* CelerDemo-Bridging-Header.h */,
-				1CAD743E21E7DFAB0096A99D /* Main.storyboard */,
 				1CC1482221EA8C1F008D4356 /* Style.swift */,
 				1CAD744421E7DFAF0096A99D /* Assets.xcassets */,
 				1CAD744621E7DFAF0096A99D /* LaunchScreen.storyboard */,
@@ -296,7 +293,6 @@
 			files = (
 				1CAD744821E7DFAF0096A99D /* LaunchScreen.storyboard in Resources */,
 				1CAD744521E7DFAF0096A99D /* Assets.xcassets in Resources */,
-				1CAD744021E7DFAB0096A99D /* Main.storyboard in Resources */,
 				1CAD748821E7EE1B0096A99D /* Slide.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,14 +428,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1CAD743E21E7DFAB0096A99D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1CAD743F21E7DFAB0096A99D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1CAD744621E7DFAF0096A99D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

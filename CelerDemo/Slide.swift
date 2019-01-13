@@ -24,26 +24,22 @@ class Slide: UICollectionViewCell {
     override init(frame: CGRect) {
         
         super.init(frame: frame)
-        configure()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(){
+
+    
+    func playVideo(urlStr: String){
         addSubview(labelTitle)
         labelTitle.snp.makeConstraints { (make) in
-            make.top.equalToSuperview().inset(10)
+            make.top.equalToSuperview().offset(10)
             make.centerX.equalToSuperview()
             
         }
         
-        
-    }
-    
-    
-    func playVideo(urlStr: String){
         var vidview: UIView = UIView(frame: CGRect(x: 0, y: 0, width: 375, height: 200))
         
         addSubview(vidview)

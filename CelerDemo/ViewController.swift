@@ -10,10 +10,11 @@ import UIKit
 import AVKit
 import SnapKit
 
-class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
+class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     
-    
-    @IBOutlet weak var collectionView: UICollectionView!
+    var collectionView: UICollectionView?
+
+//    @IBOutlet weak var collectionView: UICollectionView!
     //    @IBOutlet weak var iCarouselView: iCarousel!
     
     var iCarouselView: iCarousel!
@@ -38,38 +39,11 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        collectionView!.register(Slide.self, forCellWithReuseIdentifier: "cell")
         
-        collectionView!.delegate = self
-        collectionView!.dataSource = self
-//        scrollView.delegate = self
-//        scrollView.showsVerticalScrollIndicator = false
-        iCarouselView = iCarousel(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.width))
-//        slides = createSlides()
-//        setupSlideScrollView(slides: slides)
-        
-        //        self.view.addSubview(scrollView)
-        self.view.addSubview(iCarouselView)
-        configure()
-        
-        // Do any additional setup after loading the view, typically from a nib.
-        isfirstTimeTransform = true
-        
-        iCarouselView.delegate = self
-        iCarouselView.dataSource = self
-        
-        
-        iCarouselView.type = .coverFlow
-        iCarouselView.contentMode = .scaleAspectFill
-        iCarouselView.isPagingEnabled = true
-        
-        
-        iCarouselView.reloadData()
-        
-        collectionView.reloadData()
         
     }
     
+
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
@@ -80,6 +54,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! Slide
         
         cell.playVideo(urlStr: urlStr[indexPath.row])
@@ -87,7 +62,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         return cell
     }
-    
     
     /*
     func createSlides() -> [Slide] {
@@ -142,16 +116,15 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
     }
     */
-    
 
     
     func carouselDidScroll(_ carousel: iCarousel) {
-        self.collectionView.setContentOffset(CGPoint(x: collectionView.frame.width * CGFloat(iCarouselView.currentItemIndex), y: 0), animated: true)
+        self.collectionView!.setContentOffset(CGPoint(x: collectionView!.frame.width * CGFloat(iCarouselView.currentItemIndex), y: 0), animated: true)
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let x = self.collectionView.contentOffset.x
-        let offset = x / self.collectionView.frame.width
+        let x = self.collectionView!.contentOffset.x
+        let offset = x / self.collectionView!.frame.width
         
         if offset == 0{
             iCarouselView.scrollToItem(at: 0, duration: 0)
@@ -168,6 +141,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         }
     }
  
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 375, height: 300)
+    }
     
 }
 
@@ -190,7 +166,10 @@ extension ViewController: iCarouselDelegate, iCarouselDataSource {
         return imageView
     }
     
+   
+    
     func configure(){
+        
         //        scrollView.snp.makeConstraints { (make) in
         //            make.top.equalToSuperview().inset(10)
         //            make.left.equalToSuperview().inset(10)
@@ -198,8 +177,54 @@ extension ViewController: iCarouselDelegate, iCarouselDataSource {
         //            make.height.equalTo(250)
         //
         //        }
+        iCarouselView = iCarousel(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.width))
+        self.view.addSubview(iCarouselView)
+        
+        let flowLayout = UICollectionViewFlowLayout()
+        flowLayout.minimumInteritemSpacing = 10
+        flowLayout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
+        flowLayout.itemSize = CGSize(width: 375, height: 300)
+        flowLayout.scrollDirection = .horizontal
+        
+        
+        collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: flowLayout)
+        
+        collectionView?.backgroundColor = .white
+        collectionView!.isPagingEnabled = true
+
+        collectionView?.showsHorizontalScrollIndicator = false
+        collectionView!.delegate = self
+        collectionView!.dataSource = self
+        collectionView?.register(Slide.self, forCellWithReuseIdentifier: "cell")
+
+        
+        self.view.addSubview(collectionView!)
+
+        isfirstTimeTransform = true
+        
+        iCarouselView.delegate = self
+        iCarouselView.dataSource = self
+        
+        
+        iCarouselView.type = .coverFlow
+        iCarouselView.contentMode = .scaleAspectFill
+        iCarouselView.isPagingEnabled = true
+        
+        
+        iCarouselView.reloadData()
+        
+        collectionView!.reloadData()
+        
+        collectionView!.snp.makeConstraints { (make) in
+            make.top.equalToSuperview().offset(20)
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
+            make.height.equalTo(300)
+            
+        }
+        
         iCarouselView.snp.makeConstraints { (make) in
-            make.bottom.equalToSuperview().inset(30)
+            make.top.equalTo(collectionView!.snp.bottom).offset(100)
             make.left.equalToSuperview().offset(10)
             make.right.equalToSuperview().offset(10)
             make.height.equalTo(128)
